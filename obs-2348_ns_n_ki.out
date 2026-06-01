@@ -1,0 +1,90 @@
+Repository already exists, pulling latest changes...
+M	2348_ns_n_ki.p_run_1.log
+M	2348_ns_n_ki.p_run_2.log
+M	stat-2348_ns_n_ki.out
+Your branch is up to date with 'origin/main'.
+Unknown user setting with key 'collapseSampledAncestors'.
+Timestamp:	2026	148	39921
+Reading run:	2348_ns_n_ki_run_1
+   Processing file "2348_ns_n_ki_run_1.trees"
+
+Progress:
+0---------------25---------------50---------------75--------------100
+********************************************************************
+
+   Processing file "2348_ns_n_ki.p_run_1.log"
+   
+   Trace[] vector with 9 values
+   ============================
+   
+   [1]
+   Trace (Iteration)
+   
+   
+   [2]
+   Trace (Posterior)
+   
+   
+   [3]
+   Trace (Likelihood)
+   
+   
+   [4]
+   Trace (Prior)
+   
+   
+   [5]
+   Trace (rate_log_sd)
+   
+   
+   [6]
+   Trace (rate_loss)
+   
+   
+   [7]
+   Trace (root_freqs[1])
+   
+   
+   [8]
+   Trace (root_freqs[2])
+   
+   
+   [9]
+   Trace (tree_length)
+   
+   
+   
+   
+   Error:	Argument or label mismatch for function call.
+   Arguments which could not be matched (we stopped after the first mismatch):
+   	rootFrequencies
+   Provided call:
+   dnPhyloCTMC (TimeTree<deterministic> 'tree',
+                RealPos[]<deterministic> 'siteRates',
+                RateMatrix<deterministic> 'Q',
+                Natural<constant> 'nSites',
+                RealPos[]<constant> 'rootFrequencies',
+                String<constant> 'type',
+                String<constant> 'coding' )
+   
+   Correct usage is:
+   dnPhyloCTMC (Tree<any> tree,
+                RateGenerator|RateGenerator[]|SiteMixtureModel<any> Q,
+                Simplex<any> rootFrequencies,
+                RealPos|RealPos[]<any> branchRates,
+                Simplex|Bool<any> siteMatrices,
+                RealPos[]<any> siteRates,
+                Simplex<any> siteRatesProbs,
+                Probability<any> pInv,
+                Probability<any> observationErrorProbability,
+                Simplex<any> observationErrorFrequencies,
+                Natural<any> nSites,
+                String<any> type {valid options: "DNA"|"RNA"|"AA"|"Codon"|"Doublet"|"PoMo"|"Protein"|"Standard"|"NaturalNumbers"|"Binary"|"Restriction"},
+                Bool<any> treatAmbiguousAsGap,
+                String<any> coding {valid options:
+   "all"|"noabsencesites"|"nopresencesites"|"informative"|"variable"|"nosingletonpresence"|"nosingletonabsence"|"nosingletons"},
+                Bool<any> storeInternalNodes,
+                Bool<any> gapMatchClamped)
+   
+   Error:	Problem processing line 58 in file "ppsim_ns_n_ki.Rev"
+RevBayes job terminated at 1779962722.
